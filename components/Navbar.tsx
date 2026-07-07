@@ -15,11 +15,15 @@ function Logo({ light }: { light: boolean }) {
   return (
     <a href="#" className="flex items-center">
       <Image
-        src="/images/logo.jpg"
+        src="/images/logo.png"
         alt="PROInstall – Instalações e Engenharia"
         width={160}
         height={68}
-        className={`object-contain h-10 w-auto transition-all duration-300 ${light ? 'brightness-0 invert' : 'brightness-100'}`}
+        className={`object-contain h-10 w-auto transition-all duration-300 ${
+          light
+            ? '[filter:drop-shadow(0_1px_3px_rgba(255,255,255,0.9))]'
+            : 'brightness-100'
+        }`}
         priority
       />
     </a>

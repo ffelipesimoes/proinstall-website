@@ -18,7 +18,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo.png"
                 alt="PROInstall – Instalações e Engenharia"
                 width={160}
                 height={68}
