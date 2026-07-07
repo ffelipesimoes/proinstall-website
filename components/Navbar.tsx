@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 const navLinks = [
   { href: '#sobre', label: 'Sobre' },
@@ -12,21 +13,15 @@ const navLinks = [
 
 function Logo({ light }: { light: boolean }) {
   return (
-    <a href="#" className="flex items-center gap-2">
-      <svg width="38" height="38" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="46" fill="#E8F5E9" />
-        <ellipse cx="50" cy="50" rx="46" ry="28" fill="none" stroke="#4CAF50" strokeWidth="3" />
-        <circle cx="50" cy="50" r="46" fill="none" stroke="#4CAF50" strokeWidth="3" />
-        <line x1="4" y1="50" x2="96" y2="50" stroke="#4CAF50" strokeWidth="2" />
-        <line x1="50" y1="4" x2="50" y2="96" stroke="#4CAF50" strokeWidth="2" />
-        <rect x="30" y="34" width="14" height="9" rx="1" fill="#FF6600" transform="rotate(-20 37 38)" />
-        <rect x="46" y="28" width="14" height="9" rx="1" fill="#FF6600" transform="rotate(-10 53 32)" />
-        <circle cx="50" cy="50" r="5" fill="#4CAF50" />
-      </svg>
-      <span className="font-bold text-xl tracking-tight">
-        <span className="text-[#FF6600]">PRO</span>
-        <span className={light ? 'text-white' : 'text-gray-900'}>Install</span>
-      </span>
+    <a href="#" className="flex items-center">
+      <Image
+        src="/images/logo.jpg"
+        alt="PROInstall – Instalações e Engenharia"
+        width={160}
+        height={68}
+        className={`object-contain h-10 w-auto transition-all duration-300 ${light ? 'brightness-0 invert' : 'brightness-100'}`}
+        priority
+      />
     </a>
   )
 }

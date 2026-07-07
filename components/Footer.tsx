@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const serviceLinks = [
   'Painéis Fotovoltaicos',
   'Instalações Elétricas',
@@ -12,22 +14,16 @@ export default function Footer() {
     <footer className="bg-gray-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-          {/* Brand */}
+          {/* Brand — real logo from PDF */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="46" fill="#1a3a1a" />
-                <ellipse cx="50" cy="50" rx="46" ry="28" fill="none" stroke="#4CAF50" strokeWidth="3" />
-                <circle cx="50" cy="50" r="46" fill="none" stroke="#4CAF50" strokeWidth="3" />
-                <line x1="4" y1="50" x2="96" y2="50" stroke="#4CAF50" strokeWidth="2" />
-                <line x1="50" y1="4" x2="50" y2="96" stroke="#4CAF50" strokeWidth="2" />
-                <rect x="30" y="34" width="14" height="9" rx="1" fill="#FF6600" transform="rotate(-20 37 38)" />
-                <rect x="46" y="28" width="14" height="9" rx="1" fill="#FF6600" transform="rotate(-10 53 32)" />
-              </svg>
-              <span className="font-bold text-xl">
-                <span className="text-[#FF6600]">PRO</span>
-                <span className="text-white">Install</span>
-              </span>
+            <div className="flex items-center mb-4">
+              <Image
+                src="/images/logo.jpg"
+                alt="PROInstall – Instalações e Engenharia"
+                width={160}
+                height={68}
+                className="object-contain h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Instalações e Engenharia. Qualidade, confiança e inovação

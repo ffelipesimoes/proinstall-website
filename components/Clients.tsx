@@ -1,11 +1,13 @@
+import Image from 'next/image'
+
 const clients = [
-  { name: 'Lidl', color: '#FFD700', bg: '#004B9E' },
-  { name: 'Aldi', color: '#004F9F', bg: '#F5F5F5' },
-  { name: 'Intermarché', color: '#E30613', bg: '#FFF' },
-  { name: 'Brico Marché', color: '#00843D', bg: '#FFF' },
-  { name: 'Roady', color: '#D10A10', bg: '#FFF' },
-  { name: 'Charge Guru', color: '#1A1A2E', bg: '#F0F9FF' },
-  { name: 'Centroplan', color: '#FF6600', bg: '#FFF8F0' },
+  { name: 'Lidl', src: '/images/client-lidl.jpg', width: 200, height: 200 },
+  { name: 'Aldi', src: '/images/client-aldi.jpg', width: 225, height: 225 },
+  { name: 'Intermarché', src: '/images/client-intermarche.jpg', width: 350, height: 350 },
+  { name: 'Brico Marché', src: '/images/client-bricomarche.jpg', width: 300, height: 300 },
+  { name: 'Roady', src: '/images/client-roady.jpg', width: 225, height: 225 },
+  { name: 'Charge Guru', src: '/images/client-chargeguru.jpg', width: 256, height: 256 },
+  { name: 'Centroplan', src: '/images/client-centroplan.jpg', width: 621, height: 326 },
 ]
 
 export default function Clients() {
@@ -26,15 +28,20 @@ export default function Clients() {
           </p>
         </div>
 
+        {/* Real client logos extracted directly from the commercial presentation */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
           {clients.map((c) => (
             <div
               key={c.name}
-              className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 flex flex-col items-center justify-center min-h-[90px]"
+              className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 flex items-center justify-center min-h-[90px]"
             >
-              <span className="font-extrabold text-sm text-center" style={{ color: c.color }}>
-                {c.name}
-              </span>
+              <Image
+                src={c.src}
+                alt={`${c.name} – cliente PROInstall`}
+                width={c.width}
+                height={c.height}
+                className="object-contain max-h-14 w-auto"
+              />
             </div>
           ))}
         </div>
