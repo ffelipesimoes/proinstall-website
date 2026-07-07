@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PROInstall – Instalações e Engenharia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo-link">
+        <svg class="logo-icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="21" cy="21" r="20" fill="#2e7d32" opacity="0.12"/>
+          <path d="M21 4C11.6 4 4 11.6 4 21C4 30.4 11.6 38 21 38C30.4 38 38 30.4 38 21C38 11.6 30.4 4 21 4Z" fill="#2e7d32" opacity="0.25"/>
+          <path d="M21 8C13.3 8 7 14.3 7 22C7 29.7 13.3 36 21 36C28.7 36 35 29.7 35 22C35 14.3 28.7 8 21 8Z" fill="#388e3c" opacity="0.5"/>
+          <!-- Solar panel on globe -->
+          <rect x="13" y="18" width="16" height="10" rx="1" fill="#1b5e20"/>
+          <rect x="14" y="19" width="6" height="4" rx="0.5" fill="#4fc3f7" opacity="0.9"/>
+          <rect x="21" y="19" width="7" height="4" rx="0.5" fill="#4fc3f7" opacity="0.9"/>
+          <rect x="14" y="24" width="6" height="3" rx="0.5" fill="#29b6f6" opacity="0.9"/>
+          <rect x="21" y="24" width="7" height="3" rx="0.5" fill="#29b6f6" opacity="0.9"/>
+          <!-- Lightning bolt -->
+          <path d="M23 10L18 18H22L19 28L28 16H24L27 10Z" fill="#FF6600" opacity="0.9"/>
+        </svg>
+        <span class="logo-text"><span class="logo-pro">PRO</span>Install</span>
+        <span class="logo-tagline">Instalações e Engenharia</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn btn-primary nav-cta">Pedir Orçamento</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="inicio">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-label">Instalações e Engenharia</div>
+        <h1>Soluções <span class="highlight">Profissionais</span><br />de Instalação</h1>
+        <p>
+          A PROInstall especializa-se em instalações elétricas, energia solar fotovoltaica, carregamento de veículos elétricos e climatização para empresas e particulares em todo o país.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary btn-lg">Solicitar Orçamento</a>
+          <a href="#servicos" class="btn btn-outline-dark btn-lg">Os Nossos Serviços</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-service-grid">
+          <div class="hero-svc">
+            <div class="hero-svc-icon">
+              <!-- Solar icon -->
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="10" width="20" height="12" rx="1" fill="#FF6600"/><rect x="7" y="11" width="8" height="5" rx="0.5" fill="white" opacity="0.3"/><rect x="16" y="11" width="9" height="5" rx="0.5" fill="white" opacity="0.3"/><rect x="7" y="17" width="8" height="4" rx="0.5" fill="white" opacity="0.3"/><rect x="16" y="17" width="9" height="4" rx="0.5" fill="white" opacity="0.3"/><circle cx="16" cy="5" r="3" fill="#FF6600" opacity="0.6"/></svg>
+            </div>
+            <span>Energia Solar</span>
+          </div>
+          <div class="hero-svc">
+            <div class="hero-svc-icon">
+              <!-- Lightning icon -->
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M18 4L10 18H16L14 28L24 14H18L20 4Z" fill="#FF6600"/></svg>
+            </div>
+            <span>Instalações Elétricas</span>
+          </div>
+          <div class="hero-svc">
+            <div class="hero-svc-icon">
+              <!-- EV icon -->
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="12" width="24" height="10" rx="2" fill="#FF6600" opacity="0.2"/><rect x="6" y="14" width="8" height="6" rx="1" fill="#FF6600"/><rect x="18" y="14" width="8" height="6" rx="1" fill="#FF6600"/><path d="M12 10V12M20 10V12" stroke="#FF6600" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="24" r="2" fill="#FF6600"/><circle cx="22" cy="24" r="2" fill="#FF6600"/></svg>
+            </div>
+            <span>Carregamento VE</span>
+          </div>
+          <div class="hero-svc">
+            <div class="hero-svc-icon">
+              <!-- HVAC icon -->
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="10" rx="2" fill="#FF6600" opacity="0.2"/><rect x="6" y="10" width="14" height="6" rx="1" fill="#FF6600"/><path d="M22 13C23.1 13 24 12.1 24 11S23.1 9 22 9 20 9.9 20 11 20.9 13 22 13Z" fill="#FF6600"/><path d="M8 22C8 24 12 26 16 26S24 24 24 22" stroke="#FF6600" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <span>Climatização</span>
+          </div>
+        </div>
+        <div class="hero-image-placeholder">
+          <img src="assets/hero-solar.jpg" alt="Instalação solar fotovoltaica" class="hero-img" onerror="this.style.display='none'" />
+          <div class="hero-img-fallback">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none"><rect width="120" height="120" rx="16" fill="#FF6600" opacity="0.08"/><rect x="20" y="40" width="80" height="50" rx="4" fill="#FF6600" opacity="0.15"/><rect x="24" y="44" width="35" height="22" rx="2" fill="#FF6600" opacity="0.3"/><rect x="62" y="44" width="34" height="22" rx="2" fill="#FF6600" opacity="0.3"/><rect x="24" y="68" width="35" height="18" rx="2" fill="#FF6600" opacity="0.3"/><rect x="62" y="68" width="34" height="18" rx="2" fill="#FF6600" opacity="0.3"/><circle cx="60" cy="22" r="14" fill="#FF6600" opacity="0.2"/><path d="M60 8V14M60 30V36M44 22H38M82 22H76M49 13L53 17M67 27L71 31M49 31L53 27M67 13L71 17" stroke="#FF6600" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <p>Energia Solar Fotovoltaica</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dot-bg"></div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT / PILLARS
+  ============================================================ -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Quem Somos</span>
+        <h2>PROInstall – Instalações e Engenharia</h2>
+        <p>
+          Empresa especializada em instalações elétricas residenciais e comerciais, sistemas de energia solar fotovoltaica, infraestruturas de carregamento elétrico, climatização e projetos de engenharia de elevada qualidade.
+        </p>
+        <p>
+          Estabelecemos relações de confiança com os nossos clientes e parceiros, prezamos pelo cumprimento de prazos e apresentamos serviços de excelência em cidades reconhecidas no Centro e Norte do país.
+        </p>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="12" r="8" stroke="#FF6600" stroke-width="2"/><path d="M14 12L17 15L22 9" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 30C8 25.6 12.5 22 18 22C23.5 22 28 25.6 28 30" stroke="#FF6600" stroke-width="2" stroke-linecap="round"/><rect x="4" y="28" width="28" height="4" rx="2" fill="#FF6600" opacity="0.1"/></svg>
+          </div>
+          <h3>Serviço Personalizado</h3>
+          <p>Atendimento dedicado a cada cliente, com soluções à medida das necessidades específicas de cada projeto.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4L22 14H32L24 20L27 30L18 24L9 30L12 20L4 14H14L18 4Z" stroke="#FF6600" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Equipa Certificada</h3>
+          <p>Técnicos especializados e certificados, com formação contínua e compromisso com os mais altos padrões profissionais.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="6" y="8" width="24" height="20" rx="2" stroke="#FF6600" stroke-width="2"/><path d="M6 14H30M12 8V14M18 8V14M24 8V14" stroke="#FF6600" stroke-width="2" stroke-linecap="round"/><path d="M11 20H25M11 24H20" stroke="#FF6600" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Projetos Chave na Mão</h3>
+          <p>Gestão integral do projeto desde a conceção até à entrega, incluindo projeto técnico, licenciamento e execução.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4C18 4 8 10 8 20C8 26 12.5 30 18 30C23.5 30 28 26 28 20C28 10 18 4 18 4Z" stroke="#FF6600" stroke-width="2" stroke-linejoin="round"/><path d="M14 20L17 23L22 16" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Obras Residenciais e Comerciais</h3>
+          <p>Experiência em projetos de grande e pequena escala, desde habitações até grandes superfícies comerciais e industriais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-label">O Que Fazemos</span>
+        <h2>Os Nossos Serviços</h2>
+        <p>Soluções completas de instalação para todas as suas necessidades</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="14" width="28" height="18" rx="2" fill="#FF6600" opacity="0.12"/>
+              <rect x="8" y="16" width="11" height="7" rx="1" fill="#FF6600" opacity="0.4"/>
+              <rect x="21" y="16" width="11" height="7" rx="1" fill="#FF6600" opacity="0.4"/>
+              <rect x="8" y="24" width="11" height="7" rx="1" fill="#FF6600" opacity="0.4"/>
+              <rect x="21" y="24" width="11" height="7" rx="1" fill="#FF6600" opacity="0.4"/>
+              <circle cx="20" cy="7" r="5" fill="#FF6600" opacity="0.3"/>
+              <path d="M20 2V4M20 10V12M14 7H12M28 7H26M15.8 3.8L14.4 2.4M24.2 11.6L25.6 13M15.8 10.2L14.4 11.6M24.2 2.8L25.6 1.4" stroke="#FF6600" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Energia Solar Fotovoltaica</h3>
+          <p>Projetos completos de sistemas fotovoltaicos para autoconsumo e injeção na rede, com homologação na DGEG e concessionária elétrica.</p>
+          <ul class="service-list">
+            <li>Dimensionamento e projeto técnico</li>
+            <li>Instalação e comissionamento</li>
+            <li>Homologação DGEG / RESP</li>
+            <li>Monitorização remota</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-badge">Principal Serviço</div>
+          <div class="service-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M22 4L12 22H19L17 36L30 16H23L26 4Z" fill="#FF6600" opacity="0.8"/>
+            </svg>
+          </div>
+          <h3>Instalações Elétricas</h3>
+          <p>Instalações elétricas residenciais, comerciais e industriais de acordo com as normas técnicas portuguesas e regulamentação DGEG.</p>
+          <ul class="service-list">
+            <li>Instalações residenciais e comerciais</li>
+            <li>Instalações especiais (BT/MT)</li>
+            <li>Quadros elétricos e QGBT</li>
+            <li>Adequação e legalização DGEG</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="5" y="14" width="30" height="14" rx="3" fill="#FF6600" opacity="0.12"/>
+              <rect x="7" y="16" width="10" height="10" rx="2" fill="#FF6600" opacity="0.35"/>
+              <rect x="20" y="16" width="13" height="10" rx="2" fill="#FF6600" opacity="0.35"/>
+              <path d="M16 30V34M24 30V34" stroke="#FF6600" stroke-width="2" stroke-linecap="round"/>
+              <path d="M11 10V14M20 10V14" stroke="#FF6600" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 36H32" stroke="#FF6600" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Carregamento de Veículos Elétricos</h3>
+          <p>Instalação de postos de carregamento para veículos elétricos em parques, empresas e habitações, incluindo infraestrutura elétrica dedicada.</p>
+          <ul class="service-list">
+            <li>Wallbox residenciais</li>
+            <li>Postos de carregamento comerciais</li>
+            <li>Infraestrutura e cablagem</li>
+            <li>Gestão de energia integrada</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="4" y="8" width="32" height="16" rx="3" fill="#FF6600" opacity="0.12"/>
+              <rect x="6" y="10" width="20" height="12" rx="2" fill="#FF6600" opacity="0.35"/>
+              <circle cx="30" cy="16" r="4" fill="#FF6600" opacity="0.5"/>
+              <path d="M10 30C10 33 17 36 20 36S30 33 30 30" stroke="#FF6600" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 26V30M24 26V30" stroke="#FF6600" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Climatização (AVAC)</h3>
+          <p>Instalação e manutenção de sistemas de climatização e ventilação para conforto residencial e eficiência energética em espaços comerciais.</p>
+          <ul class="service-list">
+            <li>Ar condicionado split e multi-split</li>
+            <li>Sistemas VRF/VRV</li>
+            <li>Ventilação e ar novo</li>
+            <li>Manutenção preventiva</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="8" y="6" width="24" height="28" rx="2" fill="#FF6600" opacity="0.12"/>
+              <rect x="11" y="10" width="18" height="3" rx="1" fill="#FF6600" opacity="0.4"/>
+              <rect x="11" y="16" width="18" height="2" rx="1" fill="#FF6600" opacity="0.3"/>
+              <rect x="11" y="21" width="12" height="2" rx="1" fill="#FF6600" opacity="0.3"/>
+              <rect x="11" y="26" width="15" height="2" rx="1" fill="#FF6600" opacity="0.3"/>
+              <rect x="28" y="28" width="8" height="8" rx="1" fill="#FF6600" opacity="0.6"/>
+              <path d="M30 32L31.5 33.5L34 30" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Projetos e Engenharia</h3>
+          <p>Elaboração de projetos técnicos de engenharia eletrotécnica, com emissão de termos de responsabilidade e acompanhamento de obra.</p>
+          <ul class="service-list">
+            <li>Projetos de instalações elétricas</li>
+            <li>Projetos fotovoltaicos (CAD)</li>
+            <li>Termos de responsabilidade</li>
+            <li>Acompanhamento e fiscalização</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M20 6C20 6 8 13 8 24C8 30.6 13.4 36 20 36C26.6 36 32 30.6 32 24C32 13 20 6 20 6Z" fill="#FF6600" opacity="0.12"/>
+              <path d="M14 24L18 28L26 18" stroke="#FF6600" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Manutenção e Assistência</h3>
+          <p>Planos de manutenção preventiva e assistência técnica para garantir o bom funcionamento e longevidade de todas as instalações.</p>
+          <ul class="service-list">
+            <li>Inspeção de instalações elétricas</li>
+            <li>Limpeza de painéis fotovoltaicos</li>
+            <li>Manutenção de climatização</li>
+            <li>Relatórios técnicos</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS GALLERY
+  ============================================================ -->
+  <section class="projects" id="projetos">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-label">Portfólio</span>
+        <h2>Projetos Realizados</h2>
+        <p>Uma seleção de projetos executados em todo o país</p>
+      </div>
+      <div class="projects-tabs">
+        <button class="tab-btn active" data-tab="solar">Energia Solar</button>
+        <button class="tab-btn" data-tab="ve">Veículos Elétricos</button>
+        <button class="tab-btn" data-tab="clima">Climatização</button>
+        <button class="tab-btn" data-tab="manutencao">Manutenção</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Solar projects -->
+        <div class="project-item" data-category="solar">
+          <div class="project-placeholder">
+            <div class="project-icon">☀️</div>
+            <p>Sistema Fotovoltaico – Grande Superfície Comercial</p>
+            <span class="project-kw">~500 kWp</span>
+          </div>
+        </div>
+        <div class="project-item" data-category="solar">
+          <div class="project-placeholder">
+            <div class="project-icon">☀️</div>
+            <p>Sistema Fotovoltaico – Unidade Industrial</p>
+            <span class="project-kw">~200 kWp</span>
+          </div>
+        </div>
+        <div class="project-item" data-category="solar">
+          <div class="project-placeholder">
+            <div class="project-icon">☀️</div>
+            <p>Sistema Fotovoltaico – Habitação Unifamiliar</p>
+            <span class="project-kw">~8 kWp</span>
+          </div>
+        </div>
+        <div class="project-item" data-category="solar">
+          <div class="project-placeholder">
+            <div class="project-icon">☀️</div>
+            <p>Sistema Fotovoltaico – Edifício Residencial</p>
+            <span class="project-kw">~30 kWp</span>
+          </div>
+        </div>
+        <!-- EV projects -->
+        <div class="project-item" data-category="ve" style="display:none">
+          <div class="project-placeholder">
+            <div class="project-icon">🔌</div>
+            <p>Postos de Carregamento – Parque Comercial</p>
+            <span class="project-kw">12 Postos</span>
+          </div>
+        </div>
+        <div class="project-item" data-category="ve" style="display:none">
+          <div class="project-placeholder">
+            <div class="project-icon">🔌</div>
+            <p>Wallbox Residencial – Moradia</p>
+            <span class="project-kw">22 kW</span>
+          </div>
+        </div>
+        <div class="project-item" data-category="ve" style="display:none">
+          <div class="project-placeholder">
+            <div class="project-icon">🔌</div>
+            <p>Infraestrutura VE – Centro Comercial</p>
+            <span class="project-kw">24 Postos</span>
+          </div>
+        </div>
+        <!-- Clima projects -->
+        <div class="project-item" data-category="clima" style="display:none">
+          <div class="project-placeholder">
+            <div class="project-icon">❄️</div>
+            <p>Climatização – Edifício de Escritórios</p>
+            <span class="project-kw">Sistema VRF</span>
+          </div>
+        </div>
+        <div class="project-item" data-category="clima" style="display:none">
+          <div class="project-placeholder">
+            <div class="project-icon">❄️</div>
+            <p>Ar Condicionado – Apartamento T3</p>
+            <span class="project-kw">Multi-Split</span>
+          </div>
+        </div>
+        <!-- Manutenção -->
+        <div class="project-item" data-category="manutencao" style="display:none">
+          <div class="project-placeholder">
+            <div class="project-icon">🔧</div>
+            <p>Limpeza e Manutenção – Parque Solar Comercial</p>
+            <span class="project-kw">Semestral</span>
+          </div>
+        </div>
+        <div class="project-item" data-category="manutencao" style="display:none">
+          <div class="project-placeholder">
+            <div class="project-icon">🔧</div>
+            <p>Inspeção Elétrica – Edifício Industrial</p>
+            <span class="project-kw">Anual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CLIENTS
+  ============================================================ -->
+  <section class="clients" id="clientes">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-label">Referências</span>
+        <h2>Os Nossos Clientes</h2>
+        <p>Empresas de referência que confiam na PROInstall</p>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logo">
+          <div class="client-name client-lidl">Lidl</div>
+        </div>
+        <div class="client-logo">
+          <div class="client-name client-aldi">ALDI</div>
+        </div>
+        <div class="client-logo">
+          <div class="client-name client-inter">Intermarché</div>
+        </div>
+        <div class="client-logo">
+          <div class="client-name client-brico">Brico Marché</div>
+        </div>
+        <div class="client-logo">
+          <div class="client-name client-roady">Roady</div>
+        </div>
+        <div class="client-logo">
+          <div class="client-name client-cguru">Charge Guru</div>
+        </div>
+        <div class="client-logo">
+          <div class="client-name client-centro">Centroplan</div>
+        </div>
+      </div>
+      <p class="clients-note">E muitas outras empresas e particulares em todo o país</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY US
+  ============================================================ -->
+  <section class="whyus">
+    <div class="container">
+      <div class="section-header section-header--center section-header--light">
+        <span class="section-label">As Nossas Garantias</span>
+        <h2>Por Que Escolher a PROInstall?</h2>
+        <p>Compromisso com a qualidade em cada projeto</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 2L20 12H30L22 18L25 28L16 22L7 28L10 18L2 12H12L16 2Z" fill="white" opacity="0.9"/></svg>
+          </div>
+          <h3>Profissionais Certificados</h3>
+          <p>Técnicos com certificações reconhecidas pela DGEG e formação especializada contínua.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" stroke="white" stroke-width="2" opacity="0.9"/><path d="M10 16L14 20L22 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/></svg>
+          </div>
+          <h3>Qualidade Garantida</h3>
+          <p>Garantia de mão de obra em todos os serviços executados, com acompanhamento pós-instalação.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="4" width="20" height="24" rx="2" stroke="white" stroke-width="2" opacity="0.9"/><path d="M11 10H21M11 15H21M11 20H17" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.9"/></svg>
+          </div>
+          <h3>Documentação Técnica</h3>
+          <p>Entrega de toda a documentação técnica: projetos, termos de responsabilidade, certificados e relatórios.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 6 9 6 18C6 23.5 10.5 28 16 28C21.5 28 26 23.5 26 18C26 9 16 4 16 4Z" stroke="white" stroke-width="2" opacity="0.9"/><path d="M11 18L14.5 21.5L21 14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/></svg>
+          </div>
+          <h3>Cumprimento de Prazos</h3>
+          <p>Respeito rigoroso pelos prazos acordados, com comunicação transparente em todas as fases do projeto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA
+  ============================================================ -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Pronto para avançar com o seu projeto?</h2>
+        <p>Contacte-nos hoje e receba um orçamento personalizado e sem compromisso.</p>
+      </div>
+      <a href="#contacto" class="btn btn-white btn-lg">Pedir Orçamento Grátis</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="contact" id="contacto">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="section-label">Contacto</span>
+        <h2>Fale Connosco</h2>
+        <p>Estamos disponíveis para responder a todas as suas questões e apresentar a melhor solução para o seu projeto.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1C6.1 1 3 4.1 3 8C3 13.3 10 19 10 19C10 19 17 13.3 17 8C17 4.1 13.9 1 10 1ZM10 10.5C8.6 10.5 7.5 9.4 7.5 8C7.5 6.6 8.6 5.5 10 5.5C11.4 5.5 12.5 6.6 12.5 8C12.5 9.4 11.4 10.5 10 10.5Z" fill="#FF6600"/></svg>
+            </div>
+            <div>
+              <strong>Morada</strong>
+              <span>Portugal</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6.4 2H4C2.9 2 2 2.9 2 4C2 12.8 9.2 20 18 20C19.1 20 20 19.1 20 18V15.6C20 14.7 19.4 13.9 18.5 13.6L15.5 12.6C14.7 12.4 13.8 12.6 13.2 13.2L12.4 14C11.5 14.9 10.2 15 9.2 14.2C8.1 13.4 6.6 11.9 5.8 10.8C5 9.8 5.1 8.5 6 7.6L6.8 6.8C7.4 6.2 7.6 5.3 7.4 4.5L6.4 1.5C6.1 0.6 5.3 0 4.4 0" fill="#FF6600"/></svg>
+            </div>
+            <div>
+              <strong>Telefone</strong>
+              <span>+351 000 000 000</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 4C2 2.9 2.9 2 4 2H16C17.1 2 18 2.9 18 4V14C18 15.1 17.1 16 16 16H4C2.9 16 2 15.1 2 14V4Z" stroke="#FF6600" stroke-width="1.5"/><path d="M2 4L10 10L18 4" stroke="#FF6600" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <span>geral@proinstall.pt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <h3>Solicitar Orçamento</h3>
+        <div class="form-group">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" placeholder="O seu nome" required />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="email@empresa.pt" required />
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone *</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="+351 9XX XXX XXX" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="servico">Serviço pretendido *</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option value="solar">Energia Solar Fotovoltaica</option>
+            <option value="eletrica">Instalações Elétricas</option>
+            <option value="ve">Carregamento de Veículos Elétricos</option>
+            <option value="avac">Climatização (AVAC)</option>
+            <option value="projeto">Projeto / Engenharia</option>
+            <option value="manutencao">Manutenção e Assistência</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Descrição do projeto</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva o seu projeto ou necessidade..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar Pedido</button>
+        <p class="form-note">* Campos obrigatórios. Respondemos em 24 horas úteis.</p>
+        <div class="form-success" id="formSuccess" hidden>
+          ✅ Mensagem enviada com sucesso! Entraremos em contacto brevemente.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo-link logo-link--white">
+          <svg class="logo-icon" width="38" height="38" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="21" cy="21" r="20" fill="white" opacity="0.08"/>
+            <path d="M21 8C13.3 8 7 14.3 7 22C7 29.7 13.3 36 21 36C28.7 36 35 29.7 35 22C35 14.3 28.7 8 21 8Z" fill="white" opacity="0.15"/>
+            <rect x="13" y="18" width="16" height="10" rx="1" fill="white" opacity="0.3"/>
+            <path d="M23 10L18 18H22L19 28L28 16H24L27 10Z" fill="#FF6600" opacity="0.9"/>
+          </svg>
+          <span class="logo-text--white"><span class="logo-pro">PRO</span>Install</span>
+        </a>
+        <p>Instalações e Engenharia de confiança para particulares e empresas em todo o país.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Energia Solar Fotovoltaica</a></li>
+          <li><a href="#servicos">Instalações Elétricas</a></li>
+          <li><a href="#servicos">Carregamento Veículos Elétricos</a></li>
+          <li><a href="#servicos">Climatização (AVAC)</a></li>
+          <li><a href="#servicos">Projetos e Engenharia</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre">Sobre a PROInstall</a></li>
+          <li><a href="#projetos">Projetos Realizados</a></li>
+          <li><a href="#clientes">Os Nossos Clientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>📞 +351 000 000 000</li>
+          <li>✉️ geral@proinstall.pt</li>
+          <li>🇵🇹 Portugal</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2024 PROInstall – Instalações e Engenharia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
